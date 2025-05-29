@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Adidas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="menu">
+        <nav>
+            <a href="index.html">Главная страница</a>
+            <a href="catalog.html">Каталог</a>
+            <a href="aboutus.html">О нас</a>
+            <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+    </header>
+
+    <!-- Registration Form -->
+    <div class="form-container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1>Регистрация</h1>
+            </div>
+            <div class="form-body">
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="username">Введите имя</label>
+                        <input type="text" id="username" placeholder="Введите имя">
+                        <span id="usernameError" class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Введите email">
+                        <span id="emailError" class="error-message"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" placeholder="Введите пароль">
+                        <span id="passwordError" class="error-message"></span>
+                    </div>
+                    
+                    <div class="gender-group">
+                        <p>Пол</p>
+                        <div class="gender-options">
+                            <div class="gender-option">
+                                <input type="radio" name="gender" value="male" id="male">
+                                <label for="male">Мужчина</label>
+                            </div>
+                            <div class="gender-option">
+                                <input type="radio" name="gender" value="female" id="female">
+                                <label for="female">Женщина</label>
+                            </div>
+                        </div>
+                        <p id="genderOutput" class="gender-hint"></p>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        Зарегистрироваться
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contacts-container">
+        <h1 class="contacts-title">Контактные данные</h1>
+        
+        <div class="contacts-grid">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                    <h3>Адрес</h3>
+                    <p>ул. Московская, д. 10, г. Краснодар</p>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                    <h3>Телефон</h3>
+                    <p>+7 (953)-105-39-12</p>
+                </div>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>info@company.ru</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Adidas</h3>
+                    <p>Официальный интернет-магазин Adidas в России</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="main.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="aboutus.html">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>+7 (953)-105-39-12</li>
+                        <li>info@company.ru</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 Adidas Russia. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="contacts.js"></script>
+</body>
+</html>
